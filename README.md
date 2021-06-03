@@ -9,6 +9,9 @@ Please note that accessing low-level cryptography APIs can be insecure if used i
 * Libgcrypt (https://gnupg.org/software/libgcrypt/index.html)
 * wolfSSL (formerly CyaSSL) (https://gnupg.org/software/libgcrypt/index.html)
 
+## Compilation
+The above libraries need to be installed. Programs were developed with Ubuntu 18.04 LTS and have not been tested on other platforms. BoringSSL is linked to the pthread library and the makefile should be relinked to your installation of the BoringSSL.
+
 ## Some things that might be helpful
 * Typically, OpenSSL uses the most memory (maximum resident set size)
 * BoringSSL uses much less memory than OpenSSL despite being a fork of it
